@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>sql="select ""data[] = array%28%27label%27 =&gt; %27"" &amp; %28select RoomName from Rooms where Rooms.Rooms_ID=Base.Rooms_ID%29 as phpdata from Base where Datum &gt;=now%28%29-31 group by GastID, Rooms_ID order by Rooms_ID"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>de-DE</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>sql="select "data[] = array%28%27label%27 =&gt; %27" &amp; %28select RoomName from Rooms where Rooms.Rooms_ID=Base.Rooms_ID%29 as phpdata from Base where Datum &gt;=now%28%29-31 group by GastID, Rooms_ID order by Rooms_ID" c:\Temp\MSA2CSV\ResiGo\ResiGO.mdb c:\Temp\MSA2CSV\ResiGo\JHZB2.html</StartArguments>
+  </PropertyGroup>
+</Project>
